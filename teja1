@@ -1,1 +1,164 @@
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ git branch
+* master
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ git commit -m "aaa"
+[master cf49ade] aaa
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ git log today
+commit 19776525f58a15c6a85ddaf3e33a9cd586c57131
+Author: NareshTeja <nareshtejavath1@gmail.com>
+Date:   Wed Jan 29 12:36:01 2020 +0530
+
+    aaa
+
+commit d8134010913cac4a1c7e178fc8af0d7965683a0a
+Author: NareshTeja <nareshtejavath1@gmail.com>
+Date:   Wed Jan 29 11:19:01 2020 +0530
+
+    aaa
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .sum.java.swp
+        deleted:    README.md
+        deleted:    a
+        deleted:    b
+        deleted:    c
+        deleted:    d
+        deleted:    teja1
+        deleted:    "teja2\302\204"
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ "git commit -a"
+bash: git commit -a: command not found
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ git add a
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    a
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .sum.java.swp
+        deleted:    README.md
+        deleted:    b
+        deleted:    c
+        deleted:    d
+        deleted:    teja1
+        deleted:    "teja2\302\204"
+
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    a
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .sum.java.swp
+        deleted:    README.md
+        deleted:    b
+        deleted:    c
+        deleted:    d
+        deleted:    teja1
+        deleted:    "teja2\302\204"
+
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ git add b
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    a
+        deleted:    b
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .sum.java.swp
+        deleted:    README.md
+        deleted:    c
+        deleted:    d
+        deleted:    teja1
+        deleted:    "teja2\302\204"
+
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ git restore teja1
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    a
+        deleted:    b
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .sum.java.swp
+        deleted:    README.md
+        deleted:    c
+        deleted:    d
+        deleted:    "teja2\302\204"
+
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ rm a
+rm: cannot remove 'a': No such file or directory
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ rm c
+rm: cannot remove 'c': No such file or directory
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$ git push
+fatal: unable to access 'https://github.com/NareshTeja/devopsteja.git/': Could not resolve host: github.com
+
+dell@DESKTOP-0N99SS9 MINGW64 /d/Git practice/devopsteja (master)
+$
 hiii hloo
